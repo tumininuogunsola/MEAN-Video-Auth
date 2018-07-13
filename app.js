@@ -49,9 +49,9 @@ require("./config/passport")(passport);
 // Add some routing
 app.use('/api/user', routes);
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/ngApp/index.html'))
-})
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'dist/ngApp/index.html'))
+// })
 
 // Listen for requests
 var server = app.listen(app.get('port'), function() {
